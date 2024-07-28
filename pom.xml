@@ -11,7 +11,7 @@
     </parent>
     <groupId>com.xinghuang</groupId>
     <artifactId>blog</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${revision}</version>
     <name>blog</name>
     <description>前后端分离的博客-星皇</description>
 
@@ -20,6 +20,7 @@
 
     <!-- 子模块管理 -->
     <modules>
+        <module>blog-web</module>
 
     </modules>
 
@@ -42,7 +43,18 @@
     <!--统一插件管理-->
     <build>
         <plugins>
-
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <configuration>
+                        <excludes>
+                            <exclude>
+                                <groupId>org.projectlombok</groupId>
+                                <artifactId>lombok</artifactId>
+                            </exclude>
+                        </excludes>
+                    </configuration>
+                </plugin>
         </plugins>
     </build>
 
