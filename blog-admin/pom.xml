@@ -13,6 +13,7 @@
     <name>blog-admin</name>
     <description>负责管理后台相关功能</description>
     <dependencies>
+        <!-- 免写冗余的 Java 样板式代码 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -25,9 +26,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!--依赖的其他子模块-->
+        <dependency>
+            <groupId>com.xinghuang</groupId>
+            <artifactId>blog-common</artifactId>
+        </dependency>
     </dependencies>
-
-
 
 
 </project>

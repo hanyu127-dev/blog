@@ -27,6 +27,18 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+
+        <!--依赖的其他子模块-->
+        <dependency>
+            <groupId>com.xinghuang</groupId>
+            <artifactId>blog-admin</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.xinghuang</groupId>
+            <artifactId>blog-common</artifactId>
+        </dependency>
     </dependencies>
    <build>
        <plugins>

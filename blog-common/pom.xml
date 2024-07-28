@@ -11,21 +11,26 @@
     <artifactId>blog-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>blog-common</name>
-    <description>blog-common</description>
+    <description>此模块用于存放一些通用的功能</description>
     <dependencies>
+        <!-- 免写冗余的 Java 样板式代码 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <optional>true</optional>
         </dependency>
 
+        <!-- 常用工具库 -->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
         </dependency>
 
+        <!-- 单元测试 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
